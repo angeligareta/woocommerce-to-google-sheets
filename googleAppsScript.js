@@ -23,7 +23,7 @@ var TITLES = ["First Name", "Last Name", "Email", "Status", "Notes", "Quantity",
 /**
  * Trigger function for starting the sync process to check new orders from WooCommerce.
  */
-function doPost() {
+function syncOrders() {
     var sheetName = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet().getName();
     fetchOrders(sheetName)
 }
