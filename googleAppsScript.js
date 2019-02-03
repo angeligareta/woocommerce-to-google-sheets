@@ -21,6 +21,22 @@ var ACTIVITY_FOLDER_ID = "ACTIVITY_FOLDER_ID"; // Where you want to upload the a
 var TITLES = ["First Name", "Last Name", "Email", "Status", "Notes", "Quantity", "Total"]; // Title of the spreadsheets.
 
 /**
+ * Method that fires when the webapp receives a GET request
+ */
+function doGet(e) {
+  syncOrders();
+  return HtmlService.createHtmlOutput("Request received");
+}
+
+/**
+ * Method that fires when the webapp receives a POST request
+ */
+function doPost(e) {
+  syncOrders();
+  return HtmlService.createHtmlOutput("Post request received");
+}
+
+/**
  * Trigger function for starting the sync process to check new orders from WooCommerce.
  */
 function syncOrders() {
@@ -137,6 +153,11 @@ function getCreateDocumentID(docName) {
         docID = DriveApp.searchFiles('title = "' + docName + '"').next().getId();
         var doc = SpreadsheetApp.openById(docID).getActiveSheet();
         doc.appendRow(TITLES);
+        
+        // Customizing row
+        doc.getRange(1, 1, 1, 7).setBackground("#4a86e8");
+        doc.getRange(1, 1, 1, 7).setFontColor("white");
+        doc.getRange(1, 1, 1, 7).setFontWeight("bold");
     } else { // If it exists, return it, ONLY ONE POSSIBLE!
         docID = files.next().getId();
     }
