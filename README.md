@@ -18,3 +18,8 @@ Once you have done that, you can go to the menu item Execute -> Execute Function
 
 ### Auto Triggering
 If you want to trigger syncOrders automatically, in the Script editor go to the menu item Edit -> Current Projects Trigger. Add one, with the function syncOrders and the source time, selecting the respective frequency.
+
+### Trigger in Realtime
+There is an option to trigger it each time that a new order is created. Follow this steps:
+1. Go to script editor menu -> Publish -> Implement as a WebAPP -> Execute app as me and anyone can access. When you click update, copy the url showed.
+2. Go to WooCommerce -> Settings -> Advanced -> WebHooks and Create titled as "UpdateGoogleSheets", for instance. Now select the topic ordered created, status active and paste the url in the url field.
