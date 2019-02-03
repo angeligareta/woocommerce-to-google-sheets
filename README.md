@@ -1,4 +1,4 @@
-# WooCommerce2GoogleSeets
+# WooCommerce2GoogleSheets
 
 ## Abstract
 Free alternative to Zapier-WooCommerce integration. This Google App Script stores the newest WooCommerce orders in a general spreadsheet (the one where the script is applied), as well as in separated spreadsheets, one for each different order´s type.
