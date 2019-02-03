@@ -5,7 +5,7 @@ Free alternative to Zapier-WooCommerce integration. This Google App Script store
 
 For example, if you have two types of orders: Shirt and Jeans. It will create a spreadsheet with all the data of the people that ordered a Shirt and another for everyone that ordered Jeans. Besides, there will be a general Spreadsheet with all the orders together.
 
-And there is more, these spreadsheets will be updated each hour! Do you want to implement it? Piece of cake! Just follow two steps:
+And there is more, these spreadsheets will be updated each hour or in real-time! Do you want to implement it? Piece of cake! Just follow two steps:
 
 ## Installation
 ### Create Spreadsheet
