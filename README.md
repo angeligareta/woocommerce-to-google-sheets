@@ -5,7 +5,6 @@
   <img alt="License" src="https://img.shields.io/github/license/angeligareta/cheaper-travelling?style=flat-square" />
 </p>
 
-## Abstract
 Free alternative to Zapier-WooCommerce integration. This Google App Script stores the newest WooCommerce orders in a general spreadsheet (the one where the script is applied), as well as in separated spreadsheets, one for each different order´s type.
 
 For example, if you have two types of orders: Shirt and Jeans. It will create a spreadsheet with all the data of the people that ordered a Shirt and another for everyone that ordered Jeans. Besides, there will be a general Spreadsheet with all the orders together.
